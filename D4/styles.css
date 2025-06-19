@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+h1{
+    text-align: center;
+    margin: 20px 30px;
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(76, 72, 72);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    margin-top: 30px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 50% 25% 35%;
+    grid-template-rows: 20% 25% 35%;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    width: 80%;
+    height: 100%;
+}
+
+#box-1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#box-3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#box-5 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#h1end {
+    border-top: 5px solid tomato;
+    position: sticky ;
+    top: 0;
+}
+
+
+
+.headline {
+  grid-column: span 3;
+  background: #ddd;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+  margin-top: 100px;
+}
+
+.portfolio {
+  display: flex;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 25%;
+  background: #eee;
+  padding: 15px;
+}
+
+.projects {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.project {
+  background: #ccc;
+  padding: 15px;
+  text-align: center;
+}
