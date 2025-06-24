@@ -1,0 +1,28 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #ffffff; 
+    text-align: center;
+}
+input { 
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px; 
+}
+.movie {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: rgb(191, 188, 188);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.movie img {
+    height: 100px;
+    margin-right: 20px;
+}
+.movie-info {
+    font-size: 16px;
+}
