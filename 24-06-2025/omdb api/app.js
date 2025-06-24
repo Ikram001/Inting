@@ -8,7 +8,7 @@ searchInput.addEventListener("input", async () => {
     return;
   }
 
-  const apiKey = "API";
+  const apiKey = "20bc60e1";
   const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(
     query
   )}`;
