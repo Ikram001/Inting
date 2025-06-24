@@ -1,0 +1,58 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #F4FAFF;
+}
+body {
+    
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #2B193D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin-top: 100px;
+    text-align: center;
+    height: auto;
+    width: auto;
+    border: 5px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+
+button{
+    padding: 10px;
+    margin: 5px;
+    background-color: #E05263;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+}
+h2 {
+    color: #12355B;
+}
+
+ul{
+    list-style-type: none;
+}
+p{
+    color: black;
+    display: inline-block;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray; /* Optional: Change color to indicate completion */
+    opacity: 1.0; /* Optional: Reduce visibility slightly */
+}
