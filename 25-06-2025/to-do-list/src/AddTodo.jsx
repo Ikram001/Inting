@@ -16,7 +16,6 @@ function AddTodo(props) {
 
   return (
     <form onSubmit={handleSubmit} className="flex gap-2">
-      {}
       <input
         type="text"
         className="border p-2 flex-1"
