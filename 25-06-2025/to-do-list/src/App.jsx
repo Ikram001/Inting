@@ -23,14 +23,21 @@ function App() {
       <h1 className="text-2xl font-bold mb-4">Todo List</h1>
       <AddTodo onAdd={handleAddTodo} />
       <ul className="mt-4">
-        {todos.length > 0 ? (
-          todos.map((todo, index) => (
-            <TodoItem key={index} text={todo} onDelete={handleDeleteTodo} />
-          ))
-        ) : (
-          <p>No tasks yet...</p>
-        )}
-      </ul>
+  {todos.length > 0 ? (
+    (() => {
+      const items = [];
+      for (let i = 0; i < todos.length; i++) {
+        items.push(
+          <TodoItem text={todos[i]} onDelete={handleDeleteTodo} />
+        );
+      }
+      return items;
+    })()
+  ) : (
+    <p>No tasks yet...</p>
+  )}
+</ul>
+
     </div>
   );
 }
