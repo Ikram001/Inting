@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+:root {
+  --discord-gray: #2f3136;
+  --discord-dark: #202225;
+  --discord-dark-light: #2f3136;
+  --discord-blurple: #5865f2;
+  --discord-chat: #36393f;
+}
+
+.bg-discord-gray {
+  background-color: var(--discord-gray);
+}
+.bg-discord-dark {
+  background-color: var(--discord-dark);
+}
+.bg-discord-dark-light {
+  background-color: var(--discord-dark-light);
+}
+.bg-discord-blurple {
+  background-color: var(--discord-blurple);
+}
+.bg-discord-chat {
+  background-color: var(--discord-chat);
+}
+.text-discord-blurple {
+  color: var(--discord-blurple);
+}
+
+.hover\:bg-discord-gray:hover {
+  background-color: var(--discord-gray);
+}
